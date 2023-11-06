@@ -1,7 +1,7 @@
 # Lap1Project_Client
 
 ## About
-This repository contains files that comprise the front end of our web application. This application is a quiz website where users are tested on history questions.
+This repository contains files that comprise the front end of our web application. The application is a quiz website where users are tested on history questions. All questions are multiple choice with 4 options to choose from. Please visit https://github.com/jgooday48/Lap1Project_Server for the server side of this application.
 
 
 ## Setup 
