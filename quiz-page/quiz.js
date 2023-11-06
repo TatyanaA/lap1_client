@@ -2,6 +2,10 @@ const nextPage = document.querySelector("#nextPage");
 nextPage.addEventListener("click", displayQuestion); // random question displayer
 
 
+
+
+
+
 function displayQuestion() { // function to display a question and answer choices
 
     // grab elements
@@ -27,7 +31,7 @@ const correctAnswerButton = document.querySelector("#correct-answer");
 nextPage.addEventListener("click", shuffleAnswers);
 
 function shuffleAnswers() { // function to randomly shuffle the answers
-    
+
     const answerArray = Array.from(answers); //create array and add incorrect answers
     answerArray.push(correctAnswerButton); // add correct answer to array
     shuffleArray(answerArray);
