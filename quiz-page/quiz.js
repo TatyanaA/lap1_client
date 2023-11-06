@@ -11,7 +11,7 @@ function displayQuestion() { // function to display a question and answer choice
     const answer3 = document.querySelector("#answer3");
     const correctAnswer = document.querySelector("#correct-answer");
 
-    fetch('http://localhost:3000/questions/random') // change question and answers
+    fetch('https://reddy-server-12-joel-nybo.onrender.com/questions/random') // change question and answers
         .then(resp => resp.json())
         .then(data => {questionElement.textContent = data.question;
 
@@ -31,8 +31,8 @@ function shuffleAnswers() { // function to randomly shuffle the answers
     answerArray.push(correctAnswerButton); // add correct answer to array
     shuffleArray(answerArray);
 
-    answerArray.forEach((button, index) => {
-        document.body.appendChild(button); // re-order the answers on the webpage
+    answerArray.forEach((answer, index) => {
+        document.body.appendChild(answer); // re-order the answers on the webpage
     });
 }
 
