@@ -5,8 +5,6 @@ randomiseButton.addEventListener("click", displayQuestion); // random question d
 
 
 
-
-
 function displayQuestion() { // function to display a question and answer choices
 
     // grab elements
