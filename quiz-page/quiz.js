@@ -22,12 +22,13 @@ function displayQuestion() { // function to display a question and answer choice
     }); 
 }
 
-const answers = document.querySelectorAll(".answer");
+const answers = document.querySelectorAll(".answer"); //select all incorrect answers
 const correctAnswerButton = document.querySelector("#correct-answer");
 nextPage.addEventListener("click", shuffleAnswers);
 
 function shuffleAnswers() { // function to randomly shuffle the answers
-    const answerArray = Array.from(answers); //create array
+    
+    const answerArray = Array.from(answers); //create array and add incorrect answers
     answerArray.push(correctAnswerButton); // add correct answer to array
     shuffleArray(answerArray);
 
