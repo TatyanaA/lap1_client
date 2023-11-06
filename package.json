@@ -1,0 +1,18 @@
+{
+  "name": "lap1_client",
+  "version": "1.0.0",
+  "description": "## About This repository contains files that comprise the front end of our web application. This application is a quiz website where users are tested on history questions.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"watchify ./static/js/index.js -o bundle.js --debug\" \"live-server\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "live-server": "^1.2.2",
+    "watchify": "^4.0.0"
+  }
+}
