@@ -2,13 +2,22 @@ const randomiseButton = document.querySelector("#next-page");
 randomiseButton.addEventListener("click", displayQuestion); // random question displayer
 
 
-function displayQuestion() { // function to display a quote and the author
+
+
+
+
+
+function displayQuestion() { // function to display a question and answer choices
+
+    // grab elements
     const questionElement = document.querySelector("#question");
     const answer1 = document.querySelector("#answer1");
     const answer2 = document.querySelector("#answer2");
     const answer3 = document.querySelector("#answer3");
     const correctAnswer = document.querySelector("#correct-answer");
-    fetch('http://localhost:3000/questions/random')
+
+
+    fetch('http://localhost:3000/questions/random') // change question and answers
         .then(resp => resp.json())
         .then(data => {questionElement.textContent = data.question;
 
@@ -17,7 +26,6 @@ function displayQuestion() { // function to display a quote and the author
         answer3.textContent = data['Answer-3'];
         correctAnswer.textContent = data['Correct-Answer'];
 
-    }); // fetches a random quote from the json file
+    }); 
 }
-
 
