@@ -21,10 +21,10 @@ function displayQuestion() { // function to display a question and answer choice
         .then(resp => resp.json())
         .then(data => {questionElement.textContent = data.question;
 
-        answer1.textContent = data['Answer-1'];
-        answer2.textContent = data['Answer-2'];
-        answer3.textContent = data['Answer-3'];
-        correctAnswer.textContent = data['Correct-Answer'];
+        answer1.textContent = data.answer_1;
+        answer2.textContent = data.answer_2;
+        answer3.textContent = data.answer_3;
+        correctAnswer.textContent = data.correct_answer;
 
     }); 
 }
