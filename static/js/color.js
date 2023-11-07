@@ -1,4 +1,6 @@
 
+const allButtons = document.querySelector('buttons')
+
 const correctAnswer = document.getElementById("correct-answer")
 correctAnswer.addEventListener('click', () => {
 
@@ -20,5 +22,6 @@ function changeBack() {
     document.body.style.backgroundColor = 'red'
     const message = "Incorrect!"
     mess.textContent= message
+
 
 }
