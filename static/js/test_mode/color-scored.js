@@ -33,7 +33,7 @@ const next = document.querySelector('#nextPage');
 
 next.addEventListener('click', () => {
   clickCount++
-  if (clickCount === 6) { // goes to score page after 5 clicks
+  if (clickCount === 5) { // goes to score page after 5 clicks
     window.location.href = './score.html'
 
   }
