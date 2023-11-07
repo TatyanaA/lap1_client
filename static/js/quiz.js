@@ -22,6 +22,7 @@ function displayQuestion() {
       correctAnswer.textContent = data.correct_answer;
     });
     document.body.style.backgroundColor = 'white'
+    mess.textContent= ""
 }
 
 const answers = document.querySelectorAll('.answer');
