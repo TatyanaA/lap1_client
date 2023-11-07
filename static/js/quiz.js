@@ -21,6 +21,7 @@ function displayQuestion() {
       answer3.textContent = data.answer_3;
       correctAnswer.textContent = data.correct_answer;
     });
+    document.body.style.backgroundColor = 'white'
 }
 
 const answers = document.querySelectorAll('.answer');
