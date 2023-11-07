@@ -6,7 +6,7 @@ correctAnswer.addEventListener('click', () => { // changes background colour to 
     score ++
     const message = `Correct! You are on ${score} points`
     mess.textContent= message
-});
+})
 
 
 const incorrectAnswer1 = document.getElementById('answer1')
@@ -33,7 +33,7 @@ const next = document.querySelector('#nextPage');
 
 next.addEventListener('click', () => {
   clickCount++
-  if (clickCount === 5) { // goes to score page after 5 clicks
+  if (clickCount === 6) { // goes to score page after 5 clicks
     window.location.href = './score.html'
 
   }
