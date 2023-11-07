@@ -23,6 +23,10 @@ function displayQuestion() {
     });
     document.body.style.backgroundColor = 'white'
     mess.textContent= ""
+    correctAnswer.disabled = false
+    incorrectAnswer1.disabled = false
+    incorrectAnswer2.disabled = false
+    incorrectAnswer3.disabled = false 
 }
 
 const answers = document.querySelectorAll('.answer');
