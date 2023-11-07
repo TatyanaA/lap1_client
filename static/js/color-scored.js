@@ -29,10 +29,10 @@ function changeBack() { // allows background colour to change to red
 }
 
 let clickCount = 0
-const nextPage = document.getElementById('nextPage');
+const next = document.querySelector('#nextPage');
 
-nextPage.addEventListener('click', () => {
-  clickCount++;
+next.addEventListener('click', () => {
+  clickCount++
   if (clickCount === 5) { // goes to score page after 5 clicks
     window.location.href = './score.html'
   }
