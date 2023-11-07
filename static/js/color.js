@@ -21,6 +21,10 @@ function changeBack() { // allows background colour to change to red
     document.body.style.backgroundColor = 'red'
     const message = "Incorrect!"
     mess.textContent= message
+    correctAnswer.disabled = true
+    incorrectAnswer1.disabled = true
+    incorrectAnswer2.disabled = true
+    incorrectAnswer3.disabled = true  
 }
 
 
