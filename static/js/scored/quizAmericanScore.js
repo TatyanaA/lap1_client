@@ -1,3 +1,7 @@
+// displays questions and answers when DOM content is loaded
+document.addEventListener('DOMContentLoaded', displayQuestion);
+document.addEventListener('DOMContentLoaded', shuffleAnswers);
+
 const nextPage = document.querySelector('#nextPage');
 nextPage.addEventListener('click', displayQuestion); // random question displayer
 
