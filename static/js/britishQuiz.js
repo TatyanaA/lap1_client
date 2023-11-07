@@ -11,7 +11,7 @@ function displayQuestion() {
   const answer3 = document.querySelector('#answer3');
   const correctAnswer = document.querySelector('#correct-answer');
 
-  fetch('https://reddy-server-12-ashraf.onrender.com/questions/random') // change question and answers
+  fetch('https://reddy-server-12-ashraf.onrender.com/questions/british/random') // change question and answers
     .then((resp) => resp.json())
     .then((data) => {
       questionElement.textContent = data.question;
@@ -21,19 +21,20 @@ function displayQuestion() {
       answer3.textContent = data.answer_3;
       correctAnswer.textContent = data.correct_answer;
     });
-    document.body.style.backgroundColor = 'white'
-    mess.textContent= ""
-    correctAnswer.disabled = false
-    incorrectAnswer1.disabled = false
-    incorrectAnswer2.disabled = false
-    incorrectAnswer3.disabled = false 
+  document.body.style.backgroundColor = 'white';
+  mess.textContent = '';
+  correctAnswer.disabled = false;
+  incorrectAnswer1.disabled = false;
+  incorrectAnswer2.disabled = false;
+  incorrectAnswer3.disabled = false;
 }
 
 const answers = document.querySelectorAll('.answer');
 const correctAnswerButton = document.querySelector('#correct-answer');
 nextPage.addEventListener('click', shuffleAnswers);
 
-function shuffleAnswers() { // function to randomly shuffle the answers
+function shuffleAnswers() {
+  // function to randomly shuffle the answers
 
   const answerArray = Array.from(answers); //create array
   answerArray.push(correctAnswerButton); // add correct answer to array
@@ -44,13 +45,11 @@ function shuffleAnswers() { // function to randomly shuffle the answers
   });
 }
 
-function shuffleArray(array) {  // function to randomly shuffle an array
+function shuffleArray(array) {
+  // function to randomly shuffle an array
 
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [array[i], array[j]] = [array[j], array[i]];
   }
 }
-
-
-
