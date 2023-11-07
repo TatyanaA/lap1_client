@@ -6,7 +6,6 @@ correctAnswer.addEventListener('click', () => { // changes background colour to 
     score ++
     const message = `Correct! You are on ${score} points`
     mess.textContent= message
-
 });
 
 
@@ -21,7 +20,7 @@ incorrectAnswer3.addEventListener('click', changeBack)
 
 function changeBack() { // allows background colour to change to red
     document.body.style.backgroundColor = 'red'
-    const message = "Incorrect! You score 0 points. You currently have " + score + " points"
+    const message = `Incorrect! You score 0 points. You currently have ${score} points`
     mess.textContent= message
     correctAnswer.disabled = true
     incorrectAnswer1.disabled = true
