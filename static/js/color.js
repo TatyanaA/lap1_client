@@ -1,8 +1,6 @@
 
-const allButtons = document.querySelector('buttons')
-
 const correctAnswer = document.getElementById("correct-answer")
-correctAnswer.addEventListener('click', () => {
+correctAnswer.addEventListener('click', () => { // changes background colour to green
 
     document.body.style.backgroundColor = 'green'
     const message = "Correct!"
@@ -14,15 +12,15 @@ const incorrectAnswer1 = document.getElementById('answer1')
 const incorrectAnswer2 = document.getElementById('answer2')
 const incorrectAnswer3 = document.getElementById('answer3')
 
+// add event listners for incorrect answer selection
 incorrectAnswer1.addEventListener('click', changeBack)
 incorrectAnswer2.addEventListener('click', changeBack)
 incorrectAnswer3.addEventListener('click', changeBack)
 
-function changeBack() {
+function changeBack() { // allows background colour to change to red
     document.body.style.backgroundColor = 'red'
     const message = "Incorrect!"
     mess.textContent= message
-
 }
 
 
