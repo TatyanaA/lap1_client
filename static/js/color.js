@@ -1,8 +1,10 @@
 
-const correctAnswer = document.getElementById("correct-answer");
+const correctAnswer = document.getElementById("correct-answer")
 correctAnswer.addEventListener('click', () => {
 
-    document.body.style.backgroundColor = 'green';
+    document.body.style.backgroundColor = 'green'
+    const message = "Correct!"
+    mess.textContent= message
 });
 
 
@@ -16,5 +18,7 @@ incorrectAnswer3.addEventListener('click', changeBack)
 
 function changeBack() {
     document.body.style.backgroundColor = 'red'
+    const message = "Incorrect!"
+    mess.textContent= message
 
 }
