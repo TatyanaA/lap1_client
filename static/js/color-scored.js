@@ -28,5 +28,14 @@ function changeBack() { // allows background colour to change to red
     incorrectAnswer3.disabled = true  
 }
 
+let clickCount = 0
+const button = document.getElementById('nextPage');
+
+button.addEventListener('click', function() {
+  clickCount++;
+  if (clickCount === 5) {
+    window.location.href = './score.html';
+  }
+});
 
 
