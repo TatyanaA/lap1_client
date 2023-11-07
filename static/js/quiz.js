@@ -29,8 +29,8 @@ const answers = document.querySelectorAll('.answer');
 const correctAnswerButton = document.querySelector('#correct-answer');
 nextPage.addEventListener('click', shuffleAnswers);
 
-function shuffleAnswers() {
-  // function to randomly shuffle the answers
+function shuffleAnswers() { // function to randomly shuffle the answers
+
   const answerArray = Array.from(answers); //create array
   answerArray.push(correctAnswerButton); // add correct answer to array
   shuffleArray(answerArray);
@@ -40,8 +40,8 @@ function shuffleAnswers() {
   });
 }
 
-function shuffleArray(array) {
-  // function to randomly shuffle an array
+function shuffleArray(array) {  // function to randomly shuffle an array
+
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [array[i], array[j]] = [array[j], array[i]];
