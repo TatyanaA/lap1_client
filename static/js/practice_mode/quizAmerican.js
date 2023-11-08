@@ -15,9 +15,7 @@ function displayQuestion() {
   const answer3 = document.querySelector('#answer3');
   const correctAnswer = document.querySelector('#correct-answer');
 
-  fetch(
-    'https://reddy-server-12-ashraf.onrender.com/questions/american/random/practice'
-  ) // change question and answers
+  fetch('https://reddy-server-12-ashraf.onrender.com/questions/american/random') // change question and answers
     .then((resp) => resp.json())
     .then((data) => {
       questionElement.textContent = data.question; // display question
@@ -30,7 +28,7 @@ function displayQuestion() {
     });
   document.body.style.backgroundColor = 'white';
   mess.textContent = '';
-  
+
   // undisable buttons
   correctAnswer.disabled = false;
   incorrectAnswer1.disabled = false;
