@@ -1,13 +1,6 @@
 let score = 0;
 const correctAnswer = document.getElementById('correct-answer');
-correctAnswer.addEventListener('click', () => {
-  // changes background colour to green
-
-  document.body.style.backgroundColor = 'green';
-  score++;
-  const message = `Correct! You are on ${score} points`;
-  mess.textContent = message;
-});
+correctAnswer.addEventListener('click', changeCorrect);
 
 const incorrectAnswer1 = document.getElementById('answer1');
 const incorrectAnswer2 = document.getElementById('answer2');
@@ -19,7 +12,7 @@ incorrectAnswer2.addEventListener('click', changeBack);
 incorrectAnswer3.addEventListener('click', changeBack);
 
 function changeBack() {
-  // allows background colour to change to red
+  // allows background colour to change to red and disables other buttons if user selects an incorrect answer
   document.body.style.backgroundColor = 'red';
   const message = `Incorrect! You score 0 points. You currently have ${score} points`;
   mess.textContent = message;
@@ -27,6 +20,15 @@ function changeBack() {
   incorrectAnswer1.disabled = true;
   incorrectAnswer2.disabled = true;
   incorrectAnswer3.disabled = true;
+}
+
+function changeCorrect() {
+    // changes background colour to green if user selects the correct answer
+
+    document.body.style.backgroundColor = 'green';
+    score++;
+    const message = `Correct! You are on ${score} points`;
+    mess.textContent = message;
 }
 
 let clickCount = 0;
