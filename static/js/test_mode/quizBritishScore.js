@@ -53,7 +53,7 @@ function displayQuestion() {
   console.log('displayFunction() called!');
 }
 
-const answers = document.querySelectorAll('.answer');
+
 const correctAnswerButton = document.querySelector('#correct-answer');
 nextPage.addEventListener('click', shuffleAnswers);
 
