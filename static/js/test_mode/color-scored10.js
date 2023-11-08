@@ -51,9 +51,9 @@ next.addEventListener('click', endGame);
 
 function endGame() {
   clickCount++;
-  if (clickCount === 5) {
+  if (clickCount === 10) {
 
     alert(`Game Over. You scored ${score} points! Click OK to be taken back to the home page.`)
-    window.location.href = './index.html' //goes back to home page
+    window.location.href = './index.html' // goes back to home page
   }
 }

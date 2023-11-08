@@ -6,7 +6,7 @@ const nextPage = document.querySelector('#nextPage');
 nextPage.addEventListener('click', displayQuestion); // random question displayer
 
 let outputArr = [];
-
+let questionNumber = 0;
 function displayQuestion() {
   // function to display a question and answer choices
 
@@ -22,8 +22,9 @@ function displayQuestion() {
   ) // change question and answers
     .then((resp) => resp.json())
     .then((data) => {
-      questionElement.textContent = data.question;
+      questionElement.textContent = `Q${questionNumber} ${data.question}`; // output question
 
+      //output all 4 choices
       answer1.textContent = data.answer_1;
       answer2.textContent = data.answer_2;
       answer3.textContent = data.answer_3;
@@ -32,12 +33,17 @@ function displayQuestion() {
       outputArr.push(data.id);
       console.log(outputArr);
     });
+
   document.body.style.backgroundColor = 'white';
   mess.textContent = '';
+
+  // undisable buttons
   correctAnswer.disabled = false;
   incorrectAnswer1.disabled = false;
   incorrectAnswer2.disabled = false;
   incorrectAnswer3.disabled = false;
+
+  questionNumber++; //increment the question number by 1
 
   console.log('displayFunction() called!');
 }
