@@ -10,68 +10,101 @@
     />
 
     <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-    crossorigin="anonymous"
-  />
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
 
-  <link rel="stylesheet" href="./static/css/style_american_option.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap"
-    rel="stylesheet"
-  />
+    <link rel="stylesheet" href="./static/css/style_american_option.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap"
+      rel="stylesheet"
+    />
 
     <title>American Quiz Options</title>
   </head>
 
   <body>
-     <!-- Main menu -->
+    <!-- Main menu -->
 
-     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
         <a class="navbar-brand velocity" href="./index.html">Velocity</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item menuMain">
-              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Home</a
+              >
             </li>
 
             <li class="nav-item menuMain">
-              <a class="nav-link active" aria-current="page" href="./britishOptions.html">British history</a>
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./britishOptions.html"
+                >British history</a
+              >
             </li>
 
             <li class="nav-item menuMain">
-              <a class="nav-link active" aria-current="page" href="./americanOptions.html">American history</a>
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./americanOptions.html"
+                >American history</a
+              >
             </li>
-          
           </ul>
-        
         </div>
       </div>
     </nav>
 
     <div class="container_main">
-    <h1>American History Quiz Options</h1>
+      <h1>American History Quiz Options</h1>
 
-    <div class="twoButtons">
+      <div class="twoButtons">
+        <button class="start">
+          <a class="select" href="./quizAmerican.html">Start practise quiz </a>
+        </button>
+        <button class="start" id="scoredFive">
+          <a class="select" href="./quizAmericanScored.html"
+            >Start scored quiz (5 questions)</a
+          >
+        </button>
 
-    <button class="start">
-      <a class = "select" href="./quizAmerican.html">Start practise quiz </a>
-    </button>
-    <button class="start">
-      <a class = "select" href="./quizAmericanScored.html">Start scored quiz (5 questions)</a>
-    </button>
+        <button class="start" id="scoredTen">
+          <a class="select" href="./quizAmericanScored10.html"
+            >Start scored quiz (10 questions)</a
+          >
+        </button>
+      </div>
+    </div>
+    <script>
+      const scoredFive = document.querySelector('#scoredFive');
+      const scoredTen = document.querySelector('#scoredTen');
 
-    <button class="start">
-      <a class = "select" href="./quizAmericanScored10.html">Start scored quiz (10 questions)</a>
-    </button>
-  </div>
-  </div>
+      scoredFive.addEventListener('click', () => {
+        localStorage.setItem('prevIds', JSON.stringify([]));
+      });
+
+      scoredTen.addEventListener('click', () => {
+        localStorage.setItem('prevIds', JSON.stringify([]));
+      });
+    </script>
   </body>
 </html>
