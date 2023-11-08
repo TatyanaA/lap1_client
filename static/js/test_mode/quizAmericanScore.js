@@ -57,16 +57,16 @@ function displayQuestion() {
 
 const correctAnswerButton = document.querySelector('#correct-answer');
 nextPage.addEventListener('click', shuffleAnswers);
-
+const buttonContainer = document.querySelector('#buttons')
 function shuffleAnswers() {
   // function to randomly shuffle the answers
 
-  const answerArray = Array.from(answers); //create array
+  const answerArray = [incorrectAnswer1, incorrectAnswer2, incorrectAnswer3]; //create array
   answerArray.push(correctAnswerButton); // add correct answer to array
   shuffleArray(answerArray);
 
   answerArray.forEach((answer, index) => {
-    document.body.appendChild(answer); // re-order the answers on the webpage
+    buttonContainer.appendChild(answer); // re-order the answers on the webpage
   });
 }
 
