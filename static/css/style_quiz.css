@@ -1,43 +1,36 @@
 body {
-    
-    background-color: #8391A6;
-    font-family: 'Jim Nightshade', cursive;
-   
-   
+  background-color: #8391a6;
+  font-family: 'Jim Nightshade', cursive;
 }
 
 .velocity {
-    font-size: 40px;
+  font-size: 40px;
 }
 .menuMain {
-    font-size: 25px;
-
+  font-size: 25px;
 }
 
-
-.nextPage , .backHome {    
-
-    font-size: 30px;
-    width: 300px;
-    height: 70px;
-    border-radius:0.5em ;
-    border: none;
-    
+.nextPage,
+.backHome {
+  font-size: 30px;
+  width: 300px;
+  height: 70px;
+  border-radius: 0.5em;
+  border: none;
 }
 
 .historyQ {
-    color: black ;
-    background-color: transparent;
-    text-decoration: none;
-
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
 }
 
 .container_main {
-    position: absolute;
-    top: 18%;
-    left: 25%;
+  position: absolute;
+  top: 18%;
+  left: 25%;
 
-    /* position: relative;
+  /* position: relative;
     top: 18%;
     left: 25%; */
     /* background-color: rgba(0, 0, 0, 0.6);  */
@@ -80,38 +73,38 @@ body {
     border: none;
 }
 
-
-#nextPage,#backHome {    
-
-    font-size: 30px;
-    width: 200px;
-    height: 50px;
-    border-radius:0.5em ;
-    border: none;
-    margin-left:20px ; 
-    margin-right:20px ; 
-    
+#nextPage,
+#backHome {
+  font-size: 30px;
+  width: 200px;
+  height: 50px;
+  border-radius: 0.5em;
+  border: none;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 h1 {
-    color: white;
-    font-size: 60px;
-    
+  color: white;
+  font-size: 60px;
 }
 
-#question{
-    color: white;
-    font-size: 40px;
-    
+#question {
+  color: white;
+  font-size: 40px;
 }
 
-#question1{
-    font-size: 40px;
+#question1 {
+  font-size: 40px;
 }
 
 .answer {
+  font-size: 32px;
+  color: black;
+}
+
+#mess {
     font-size: 32px;
-    color:black;
 }
 
 #mess {
