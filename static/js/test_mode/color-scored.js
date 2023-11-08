@@ -13,9 +13,14 @@ incorrectAnswer3.addEventListener('click', changeBack);
 
 function changeBack() {
   // allows background colour to change to red and disables other buttons if user selects an incorrect answer
+
   document.body.style.backgroundColor = 'red';
+  
+  //display message on screen
   const message = `Incorrect! You score 0 points. You currently have ${score} points`;
   mess.textContent = message;
+
+  // disable buttons when an answer is selected
   correctAnswer.disabled = true;
   incorrectAnswer1.disabled = true;
   incorrectAnswer2.disabled = true;
@@ -27,8 +32,12 @@ function changeCorrect() {
 
     document.body.style.backgroundColor = 'green';
     score++;
+
+    //display message on screen
     const message = `Correct! You are on ${score} points`;
     mess.textContent = message;
+
+    // disable buttons when an answer is selected
     correctAnswer.disabled = true;
     incorrectAnswer1.disabled = true;
     incorrectAnswer2.disabled = true;
@@ -43,9 +52,8 @@ next.addEventListener('click', endGame);
 function endGame() {
   clickCount++;
   if (clickCount === 5) {
-    // goes to score page after 5 clicks
 
     alert(`Game Over. You scored ${score} points`)
-    window.location.href = './index.html'
+    window.location.href = './index.html' //goes back to home page
   }
 }
