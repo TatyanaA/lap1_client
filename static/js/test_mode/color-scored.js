@@ -34,10 +34,14 @@ function changeCorrect() {
 let clickCount = 0;
 const next = document.querySelector('#nextPage');
 
-next.addEventListener('click', () => {
+next.addEventListener('click', endGame);
+
+function endGame() {
   clickCount++;
   if (clickCount === 5) {
     // goes to score page after 5 clicks
-    window.location.href = './score.html';
+    // window.location.href = './score.html';
+    alert(`Game Over. You scored ${score} points`)
+    window.location.href = './index.html'
   }
-});
+}
