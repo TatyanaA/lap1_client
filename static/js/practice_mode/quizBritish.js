@@ -9,7 +9,7 @@ function displayQuestion() {
   // function to display a question and answer choices
 
   // grab elements
-  const questionElement = document.querySelector('#question');
+  const questionElement = document.querySelector('#question1');
   const answer1 = document.querySelector('#answer1');
   const answer2 = document.querySelector('#answer2');
   const answer3 = document.querySelector('#answer3');
@@ -18,15 +18,18 @@ function displayQuestion() {
   fetch('https://reddy-server-12-ashraf.onrender.com/questions/british/random') // change question and answers
     .then((resp) => resp.json())
     .then((data) => {
-      questionElement.textContent = data.question;
+      questionElement.textContent = data.question; // display question
 
+      //display answers
       answer1.textContent = data.answer_1;
       answer2.textContent = data.answer_2;
       answer3.textContent = data.answer_3;
       correctAnswer.textContent = data.correct_answer;
     });
-  document.body.style.backgroundColor = 'white';
+  document.body.style.backgroundColor = '#8391A6';
   mess.textContent = '';
+
+  // undisable buttons
   correctAnswer.disabled = false;
   incorrectAnswer1.disabled = false;
   incorrectAnswer2.disabled = false;
@@ -36,7 +39,7 @@ function displayQuestion() {
 
 const correctAnswerButton = document.querySelector('#correct-answer');
 nextPage.addEventListener('click', shuffleAnswers);
-
+answers = []
 function shuffleAnswers() {
   // function to randomly shuffle the answers
 
