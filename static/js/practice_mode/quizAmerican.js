@@ -20,8 +20,9 @@ function displayQuestion() {
   ) // change question and answers
     .then((resp) => resp.json())
     .then((data) => {
-      questionElement.textContent = data.question;
+      questionElement.textContent = data.question; // display question
 
+      //display answers
       answer1.textContent = data.answer_1;
       answer2.textContent = data.answer_2;
       answer3.textContent = data.answer_3;
@@ -29,6 +30,8 @@ function displayQuestion() {
     });
   document.body.style.backgroundColor = 'white';
   mess.textContent = '';
+  
+  // undisable buttons
   correctAnswer.disabled = false;
   incorrectAnswer1.disabled = false;
   incorrectAnswer2.disabled = false;
