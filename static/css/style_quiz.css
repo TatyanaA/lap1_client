@@ -36,9 +36,13 @@ body {
     position: absolute;
     top: 18%;
     left: 25%;
+
+    /* position: relative;
+    top: 18%;
+    left: 25%; */
     /* background-color: rgba(0, 0, 0, 0.6);  */
-    height: 50vh;
-    width: 85vh;
+    height: 40rem;
+    width: auto;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -84,11 +88,23 @@ body {
     
 }
 
-h1 , #question{
+h1 {
     color: white;
+    font-size: 60px;
     
 }
 
-#mess{
-    font-size: 30px;
+#question{
+    color: white;
+    font-size: 40px;
+    
+}
+
+#question1{
+    font-size: 40px;
+}
+
+.answer {
+    font-size: 32px;
+    color:black;
 }

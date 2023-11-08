@@ -14,18 +14,21 @@ body {
 
 .container_main {
     position: absolute;
+   
     top: 25%;
-    left: 25%;
+    left: 25%; 
     background-color: rgba(0, 0, 0, 0.6); 
-    height: 50vh;
-    width: 85vh;
+    /* height: 50vh;
+    width: 85vh; */
+    height: 500px;
+    width: 800px; 
     display:flex;
     flex-direction: column;
     align-items: center;
     align-content: space-between;
-    /* flex-basis:auto; */
+    flex-basis:auto;
     justify-content: center; 
-    align-items: center; 
+    
     gap:60px;
     z-index: 1; 
 
@@ -77,3 +80,23 @@ p {
     background-color: transparent;
     text-decoration: none;
   }
+
+
+  @media (max-width: 720px) {
+
+
+    .container_main {
+        height: auto; /* Adjust for smaller screens */
+        width: 90%; /* Adjust for smaller screens */
+        padding: 20px; /* Add some padding to the container */
+    }
+
+    h1 {
+        font-size: 40px; /* Adjust for smaller screens */
+    }
+
+    p {
+        font-size: 18px; /* Adjust for smaller screens */
+    }
+}
+
