@@ -38,9 +38,8 @@ next.addEventListener('click', endGame);
 
 function endGame() {
   clickCount++;
-  if (clickCount === 5) {
-    // goes to score page after 5 clicks
-
+  if (clickCount === 10) {
+    // goes to score page after 10 clicks
     alert(`Game Over. You scored ${score} points`)
     window.location.href = './index.html'
   }
