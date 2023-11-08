@@ -54,7 +54,7 @@ function displayQuestion() {
   questionNumber++; //increment the question number by 1
 }
 
-const answers = document.querySelectorAll('.answer');
+
 const correctAnswerButton = document.querySelector('#correct-answer');
 nextPage.addEventListener('click', shuffleAnswers);
 
