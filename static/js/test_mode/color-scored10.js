@@ -31,16 +31,16 @@ function changeCorrect() {
     // changes background colour to green if user selects the correct answer
 
     document.body.style.backgroundColor = 'green';
+    score++;
 
     //display message on screen
-    const message = `Incorrect! You score 0 points. You currently have ${score} points`;
+    const message = `Correct! You are on ${score} points`;
     mess.textContent = message;
-  
+
     // disable buttons when an answer is selected
     correctAnswer.disabled = true;
     incorrectAnswer1.disabled = true;
     incorrectAnswer2.disabled = true;
-    incorrectAnswer3.disabled = true;
     incorrectAnswer3.disabled = true;
 }
 
