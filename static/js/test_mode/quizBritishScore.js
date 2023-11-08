@@ -1,5 +1,11 @@
+// displays questions and answers when DOM content is loaded
+document.addEventListener('DOMContentLoaded', displayQuestion);
+document.addEventListener('DOMContentLoaded', shuffleAnswers);
+
 const nextPage = document.querySelector('#nextPage');
 nextPage.addEventListener('click', displayQuestion); // random question displayer
+
+let outputArr = [];
 
 function displayQuestion() {
   // function to display a question and answer choices
@@ -11,7 +17,9 @@ function displayQuestion() {
   const answer3 = document.querySelector('#answer3');
   const correctAnswer = document.querySelector('#correct-answer');
 
-  fetch('https://reddy-server-12-ashraf.onrender.com/questions/british/random') // change question and answers
+  fetch(
+    'https://reddy-server-12-ashraf.onrender.com/questions/british/random/test'
+  ) // change question and answers
     .then((resp) => resp.json())
     .then((data) => {
       questionElement.textContent = data.question;
@@ -20,6 +28,9 @@ function displayQuestion() {
       answer2.textContent = data.answer_2;
       answer3.textContent = data.answer_3;
       correctAnswer.textContent = data.correct_answer;
+
+      outputArr.push(data.id);
+      console.log(outputArr);
     });
   document.body.style.backgroundColor = 'white';
   mess.textContent = '';
@@ -27,6 +38,8 @@ function displayQuestion() {
   incorrectAnswer1.disabled = false;
   incorrectAnswer2.disabled = false;
   incorrectAnswer3.disabled = false;
+
+  console.log('displayFunction() called!');
 }
 
 const answers = document.querySelectorAll('.answer');
