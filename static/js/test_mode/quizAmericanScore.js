@@ -11,7 +11,7 @@ function displayQuestion() {
   console.log('displayFunction() called!');
 
   // grab elements
-  const questionElement = document.querySelector('#question');
+  const questionElement = document.querySelector('#question1');
   const answer1 = document.querySelector('#answer1');
   const answer2 = document.querySelector('#answer2');
   const answer3 = document.querySelector('#answer3');
@@ -42,7 +42,7 @@ function displayQuestion() {
       }
     });
 
-  document.body.style.backgroundColor = 'white';
+  document.body.style.backgroundColor = '#8391A6';
   mess.textContent = '';
 
   // undisable buttons
