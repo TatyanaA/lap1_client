@@ -17,9 +17,7 @@ function displayQuestion() {
   const answer3 = document.querySelector('#answer3');
   const correctAnswer = document.querySelector('#correct-answer');
 
-  fetch(
-    'https://reddy-server-12-ashraf.onrender.com/questions/british/random/test'
-  ) // change question and answers
+  fetch('https://reddy-server-12-ashraf.onrender.com/questions/british/random') // change question and answers
     .then((resp) => resp.json())
     .then((data) => {
       questionElement.textContent = `Q${questionNumber} ${data.question}`;
