@@ -13,7 +13,12 @@ body {
 }
 
 .container_main {
-    height: 100vh;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    height: 50vh;
+    width: 85vh;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -21,8 +26,12 @@ body {
     /* flex-basis:auto; */
     justify-content: center; 
     align-items: center; 
+    gap:60px;
+    z-index: 1; 
 
 }
+
+
 
 p , h1 {
     color: white;
@@ -30,6 +39,7 @@ p , h1 {
 h1 {
     font-size: 100px;
 }
+
 p {
     font-size: 36px;
 }
@@ -46,12 +56,12 @@ p {
 }
 
  #start {    
-    color: black !important;;
-    text-decoration: none; /* This removes the default underline on links */
+
     font-size: 30px;
     width: 300px;
     height: 70px;
     border-radius:0.5em ;
+    border: none;
     
 } 
 .velocity {
@@ -61,3 +71,9 @@ p {
     font-size: 25px;
 
 }
+
+.historyQ {
+    color: black ;
+    background-color: transparent;
+    text-decoration: none;
+  }
