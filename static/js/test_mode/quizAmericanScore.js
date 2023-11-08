@@ -5,10 +5,10 @@ document.addEventListener('DOMContentLoaded', shuffleAnswers);
 const nextPage = document.querySelector('#nextPage');
 nextPage.addEventListener('click', displayQuestion); // random question displayer
 
-let outputArr = [];
 let questionNumber = 0;
 function displayQuestion() {
   // function to display a question and answer choices
+  console.log('displayFunction() called!');
 
   // grab elements
   const questionElement = document.querySelector('#question');
@@ -17,21 +17,29 @@ function displayQuestion() {
   const answer3 = document.querySelector('#answer3');
   const correctAnswer = document.querySelector('#correct-answer');
 
-  fetch(
-    'https://reddy-server-12-ashraf.onrender.com/questions/american/random/test'
-  ) // change question and answers
+  fetch('http://localhost:3000/questions/american/random/') // change question and answers
     .then((resp) => resp.json())
     .then((data) => {
-      questionElement.textContent = `Q${questionNumber} ${data.question}`; // output question
+      let retString = localStorage.getItem('prevIds');
+      let prevIds = JSON.parse(retString);
+      console.log(prevIds);
+      let currentId = data.id;
 
-      //output all 4 choices
-      answer1.textContent = data.answer_1;
-      answer2.textContent = data.answer_2;
-      answer3.textContent = data.answer_3;
-      correctAnswer.textContent = data.correct_answer;
+      if (prevIds.includes(currentId)) {
+        displayQuestion();
+      } else {
+        questionElement.textContent = `Q.${questionNumber} ${data.question}`; // output question
 
-      outputArr.push(data.id);
-      console.log(outputArr);
+        //output all 4 choices
+        answer1.textContent = data.answer_1;
+        answer2.textContent = data.answer_2;
+        answer3.textContent = data.answer_3;
+        correctAnswer.textContent = data.correct_answer;
+
+        prevIds.push(currentId);
+        localStorage.setItem('prevIds', JSON.stringify(prevIds));
+        console.log(prevIds);
+      }
     });
 
   document.body.style.backgroundColor = 'white';
@@ -44,8 +52,6 @@ function displayQuestion() {
   incorrectAnswer3.disabled = false;
 
   questionNumber++; //increment the question number by 1
-
-  console.log('displayFunction() called!');
 }
 
 const answers = document.querySelectorAll('.answer');
