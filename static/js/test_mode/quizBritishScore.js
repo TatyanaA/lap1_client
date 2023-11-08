@@ -24,6 +24,8 @@ function displayQuestion() {
     .then((data) => {
       questionElement.textContent = `Q.${questionNumber} ${data.question}`;
 
+
+      //display answers
       answer1.textContent = data.answer_1;
       answer2.textContent = data.answer_2;
       answer3.textContent = data.answer_3;
@@ -34,6 +36,8 @@ function displayQuestion() {
     });
   document.body.style.backgroundColor = 'white';
   mess.textContent = '';
+
+  // undisable answers
   correctAnswer.disabled = false;
   incorrectAnswer1.disabled = false;
   incorrectAnswer2.disabled = false;
