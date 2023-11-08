@@ -10,7 +10,7 @@ function displayQuestion() {
   // function to display a question and answer choices
 
   // grab elements
-  const questionElement = document.querySelector('#question');
+  const questionElement = document.querySelector('#question1');
   const answer1 = document.querySelector('#answer1');
   const answer2 = document.querySelector('#answer2');
   const answer3 = document.querySelector('#answer3');
@@ -40,7 +40,7 @@ function displayQuestion() {
         console.log(prevIds);
       }
     });
-  document.body.style.backgroundColor = 'white';
+  document.body.style.backgroundColor =  '#8391A6';
   mess.textContent = '';
 
   // undisable answers
@@ -65,7 +65,7 @@ function shuffleAnswers() {
   shuffleArray(answerArray);
 
   answerArray.forEach((answer, index) => {
-    document.body.appendChild(answer); // re-order the answers on the webpage
+    buttonContainer.appendChild(answer); // re-order the answers on the webpage
   });
 }
 

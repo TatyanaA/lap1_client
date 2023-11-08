@@ -8,29 +8,98 @@
       href="./static/imgs/icon.ico"
       type="image/x-icon"
     />
+
     <script defer src="./static/js/test_mode/color-scored10.js"></script>
     <script defer src="./static/js/test_mode/quizAmericanScore.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./static/css/style_quiz.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap" rel="stylesheet">
 
     <title>Scored American History Quiz (10 questions)</title>
   </head>
 
   <body>
-    <h1>American History Questions</h1>
+    <!-- Main menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand velocity" href="./index.html">Velocity</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item menuMain">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Home</a
+              >
+            </li>
 
-    <h2 id="question">''</h2>
+            <li class="nav-item menuMain">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./britishOptions.html"
+                >British history</a
+              >
+            </li>
 
-    <div id="mess"></div>
+            <li class="nav-item menuMain">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./americanOptions.html"
+                >American history</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-    <div id="buttons">
-      <button id="answer1" class="answer"></button>
-      <button id="answer2" class="answer"></button>
-      <button id="answer3" class="answer"></button>
-      <button id="correct-answer"></button>
+    <div class="container_main">
+      <h1>American History Questions</h1>
+
+      <div class="container_question">
+        <!-- <h2 id="question">Q1. Who out of the following was not one of Henry VIIIs wives?</h2> -->
+       
+        <div id="question1" ></div>
+  
+
+
+        <div id="buttons">
+          <div class="top-buttons">
+            <button id="answer1" class="answer btn btn-secondary"></button>
+            <button id="answer2" class="answer btn btn-secondary"></button>
+          </div>
+          <div class="low-buttons">
+            <button id="answer3" class="answer btn btn-secondary"></button>
+            <button
+              id="correct-answer"
+              class="answer btn btn-secondary"
+            ></button>
+          </div>
+        </div>
+      </div><!-- div container_question -->
+      <div id="mess"></div>
+      
+      <div>
+        <button id="nextPage" class="btn btn-light">Next Question</button>
+        <button id="backHome" class="btn btn-light">
+          <a class="historyQ" href="./index.html">Back to home</a>
+        </button>
+      </div>
     </div>
-
-    <div>
-      <button id="nextPage">Next Question</button>
-      <button id="backHome"><a href="./index.html">Back to home</a></button>
-    </div>
+    <!-- div main container -->
   </body>
 </html>
