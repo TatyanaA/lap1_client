@@ -9,7 +9,7 @@ function displayQuestion() {
   // function to display a question and answer choices
 
   // grab elements
-  const questionElement = document.querySelector('#question');
+  const questionElement = document.querySelector('#question1');
   const answer1 = document.querySelector('#answer1');
   const answer2 = document.querySelector('#answer2');
   const answer3 = document.querySelector('#answer3');
