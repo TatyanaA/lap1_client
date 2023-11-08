@@ -17,7 +17,7 @@ function displayQuestion() {
   const answer3 = document.querySelector('#answer3');
   const correctAnswer = document.querySelector('#correct-answer');
 
-  fetch('http://localhost:3000/questions/american/random/') // change question and answers
+  fetch('https://reddy-server-12-ashraf.onrender.com/questions/american/random') // change question and answers
     .then((resp) => resp.json())
     .then((data) => {
       let retString = localStorage.getItem('prevIds');
