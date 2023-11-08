@@ -26,7 +26,7 @@ function displayQuestion() {
       answer3.textContent = data.answer_3;
       correctAnswer.textContent = data.correct_answer;
     });
-  document.body.style.backgroundColor = 'white';
+  document.body.style.backgroundColor = '#8391A6';
   mess.textContent = '';
 
   // undisable buttons
