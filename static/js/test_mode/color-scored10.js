@@ -31,7 +31,7 @@ function changeCorrect() {
     // changes background colour to green if user selects the correct answer
 
     document.body.style.backgroundColor = 'green';
-    
+
     //display message on screen
     const message = `Incorrect! You score 0 points. You currently have ${score} points`;
     mess.textContent = message;
@@ -53,7 +53,7 @@ function endGame() {
   clickCount++;
   if (clickCount === 10) {
 
-    alert(`Game Over. You scored ${score} points`)
+    alert(`Game Over. You scored ${score} points! Click OK to be taken back to the home page.`)
     window.location.href = './index.html' // goes back to home page
   }
 }
