@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', shuffleAnswers);
 const nextPage = document.querySelector('#nextPage');
 nextPage.addEventListener('click', displayQuestion); // random question displayer
 
+let outputArr = [];
+
 function displayQuestion() {
   // function to display a question and answer choices
 
@@ -26,6 +28,9 @@ function displayQuestion() {
       answer2.textContent = data.answer_2;
       answer3.textContent = data.answer_3;
       correctAnswer.textContent = data.correct_answer;
+
+      outputArr.push(data.id);
+      console.log(outputArr);
     });
   document.body.style.backgroundColor = 'white';
   mess.textContent = '';
@@ -33,6 +38,8 @@ function displayQuestion() {
   incorrectAnswer1.disabled = false;
   incorrectAnswer2.disabled = false;
   incorrectAnswer3.disabled = false;
+
+  console.log('displayFunction() called!');
 }
 
 const answers = document.querySelectorAll('.answer');
