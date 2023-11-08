@@ -20,7 +20,7 @@ function displayQuestion() {
   fetch('https://reddy-server-12-ashraf.onrender.com/questions/british/random') // change question and answers
     .then((resp) => resp.json())
     .then((data) => {
-      questionElement.textContent = `Q${questionNumber} ${data.question}`;
+      questionElement.textContent = `Q.${questionNumber} ${data.question}`;
 
       //display answers
       answer1.textContent = data.answer_1;
