@@ -36,7 +36,7 @@ function displayQuestion() {
   incorrectAnswer3.disabled = false;
 }
 
-const answers = document.querySelectorAll('.answer');
+
 const correctAnswerButton = document.querySelector('#correct-answer');
 nextPage.addEventListener('click', shuffleAnswers);
 
