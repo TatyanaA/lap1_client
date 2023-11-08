@@ -29,6 +29,10 @@ function changeCorrect() {
     score++;
     const message = `Correct! You are on ${score} points`;
     mess.textContent = message;
+    correctAnswer.disabled = true;
+    incorrectAnswer1.disabled = true;
+    incorrectAnswer2.disabled = true;
+    incorrectAnswer3.disabled = true;
 }
 
 let clickCount = 0;
