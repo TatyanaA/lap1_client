@@ -22,7 +22,7 @@ function displayQuestion() {
   ) // change question and answers
     .then((resp) => resp.json())
     .then((data) => {
-      questionElement.textContent = `Q.${questionNumber} ${data.question}`;
+      questionElement.textContent = `Q${questionNumber} ${data.question}`;
 
       //display answers
       answer1.textContent = data.answer_1;
