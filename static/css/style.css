@@ -10,19 +10,3 @@ body {
 .container_main {
   padding: 24px;
 }
-
-@media (max-width: 720px) {
-  .container_main {
-    height: auto; /* Adjust for smaller screens */
-    width: 90%; /* Adjust for smaller screens */
-    padding: 20px; /* Add some padding to the container */
-  }
-
-  h1 {
-    font-size: 40px; /* Adjust for smaller screens */
-  }
-
-  p {
-    font-size: 18px; /* Adjust for smaller screens */
-  }
-}
