@@ -1,9 +1,9 @@
 .container_main {
   position: absolute;
-  top: 18%;
-  left: 25%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   height: 40rem;
-  width: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
