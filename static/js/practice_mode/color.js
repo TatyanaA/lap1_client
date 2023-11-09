@@ -5,6 +5,11 @@ correctAnswer.addEventListener('click', () => {
   document.body.style.backgroundColor = 'green';
   const message = 'Correct!';
   mess.textContent = message;
+    // disable buttons when an answer is selected
+    correctAnswer.disabled = true;
+    incorrectAnswer1.disabled = true;
+    incorrectAnswer2.disabled = true;
+    incorrectAnswer3.disabled = true;
 });
 
 const incorrectAnswer1 = document.getElementById('answer1');
