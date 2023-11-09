@@ -37,11 +37,10 @@ This repository contains files that comprise the front end of our web applicatio
 ### Challenges
 - The shuffle answers function had a bug, which we did not realise until after the CSS was implemented. This was solved in the js file.
 
-
-## Bugs
-- It can sometimes take a few seconds for the questions and answers to load when first visiting the website.
-
-
 ## Future Features
 - Add more specific categories such as the English Civil War.
+- Optimise for mobile devices
+- Provide explanations of answers such as facts
+- Keep content fresh by updating questions
+
 
