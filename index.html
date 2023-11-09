@@ -9,7 +9,7 @@
       href="./static/imgs/icon.ico"
       type="image/x-icon"
     />
-    
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -18,71 +18,77 @@
     />
 
     <link rel="stylesheet" href="./static/css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- <script src="./static/js/index.js" defer></script> -->
     <title>Quiz App</title>
   </head>
   <body>
-  <!-- Main menu -->
+    <!-- Main menu -->
 
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-          <a class="navbar-brand velocity" href="./index.html">Velocity</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item menuMain">
-                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-              </li>
+    <nav class="navbar navbar-expand-lg flex navbar-dark bg-dark">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item menuMain">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Home</a
+              >
+            </li>
 
-              <li class="nav-item menuMain">
-                <a class="nav-link active" aria-current="page" href="./britishOptions.html">British history</a>
-              </li>
+            <li class="nav-item menuMain">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./britishOptions.html"
+                >British History</a
+              >
+            </li>
 
-              <li class="nav-item menuMain">
-                <a class="nav-link active" aria-current="page" href="./americanOptions.html">American history</a>
-              </li>
-            
-            </ul>
-          
-          </div>
+            <li class="nav-item menuMain">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./americanOptions.html"
+                >American History</a
+              >
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
 
-  
-  <div class="container_main">
-   
-
-    <div class="welcome">     
-      <h1>Welcome to the Quiz App</h1>
-    </div>
-    <div>
-
+    <div class="container_main">
+      <div class="welcome">
+        <h1>Welcome to the Quiz App</h1>
+      </div>
+      <div>
         <p>Click on a category below</p>
       </div>
 
+      <div class="twoButtons">
+        <button id="btn btn-light" class="start">
+          <a class="historyQ" href="./britishOptions.html">British History</a>
+        </button>
 
-    <div class="twoButtons">
-     
-        <button id="btn btn-light" class="start"><a class="historyQ" href="./britishOptions.html">British History</a></button>
-    
-
-     
-        <button id="btn btn-light" class="start" ><a class="historyQ" href="./americanOptions.html">American History</a></button>
-      
+        <button id="btn btn-light" class="start">
+          <a class="historyQ" href="./americanOptions.html">American History</a>
+        </button>
+      </div>
     </div>
-     
 
-  </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
