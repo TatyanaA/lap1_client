@@ -1,1 +1,0 @@
-console.error("Error: Can't walk dependency graph: Cannot find module '/Users/nine96/Development/lfa/lap-1/project_week/lap1_client/static/js/index.js' from '/Users/nine96/Development/lfa/lap-1/project_week/lap1_client/static/js/_fake.js'\n    required by /Users/nine96/Development/lfa/lap-1/project_week/lap1_client/static/js/_fake.js");
