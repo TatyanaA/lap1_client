@@ -15,8 +15,12 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./static/css/style.css" />
+
     <title>Quiz App</title>
   </head>
   <body>
@@ -65,23 +69,25 @@
     </nav>
 
     <div class="container_main">
-      <div class="welcome">
+      <div
+        class="welcome animate__animated animate__fadeInDown animate__faster"
+      >
         <h1>Welcome to the Quiz App</h1>
       </div>
-      <div>
+      <div class="animate__animated animate__fadeInUp animate__faster">
         <p>Select from the categories below:</p>
       </div>
 
       <div class="twoButtons">
         <button
-          class="start btn btn-light"
+          class="start btn btn-light animate__animated animate__fadeInBottomLeft animate__faster"
           onclick="location.href='./britishOptions.html'"
         >
           British History
         </button>
 
         <button
-          class="start btn btn-light"
+          class="start btn btn-light animate__animated animate__fadeInBottomRight animate__faster"
           onclick="location.href='./americanOptions.html'"
         >
           American History
