@@ -8,9 +8,7 @@ body {
 }
 
 .container_main {
-  flex-basis: auto;
-  height: 500px;
-  width: 800px;
+  padding: 24px;
 }
 
 @media (max-width: 720px) {
