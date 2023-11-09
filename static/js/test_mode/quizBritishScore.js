@@ -42,7 +42,7 @@ function displayQuestion() {
         console.log(prevIds);
       }
     });
-  document.body.style.backgroundColor =  '#8391A6';
+  document.body.style.backgroundColor = '#8391A6';
   mess.textContent = '';
 
   // undisable answers
@@ -54,10 +54,9 @@ function displayQuestion() {
   console.log('displayFunction() called!');
 }
 
-
 const correctAnswerButton = document.querySelector('#correct-answer');
 nextPage.addEventListener('click', shuffleAnswers);
-const buttonContainer = document.querySelector('#buttons')
+const buttonContainer = document.querySelector('#buttons');
 function shuffleAnswers() {
   // function to randomly shuffle the answers
 

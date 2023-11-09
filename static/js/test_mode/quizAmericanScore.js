@@ -28,7 +28,7 @@ function displayQuestion() {
       if (prevIds.includes(currentId)) {
         displayQuestion();
       } else {
-        questionNumber++; 
+        questionNumber++;
 
         questionElement.textContent = `Q.${questionNumber} ${data.question}`; // output question
 
@@ -52,14 +52,11 @@ function displayQuestion() {
   incorrectAnswer1.disabled = false;
   incorrectAnswer2.disabled = false;
   incorrectAnswer3.disabled = false;
-
-
 }
-
 
 const correctAnswerButton = document.querySelector('#correct-answer');
 nextPage.addEventListener('click', shuffleAnswers);
-const buttonContainer = document.querySelector('#buttons')
+const buttonContainer = document.querySelector('#buttons');
 function shuffleAnswers() {
   // function to randomly shuffle the answers
 
