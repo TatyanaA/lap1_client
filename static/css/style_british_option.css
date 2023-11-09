@@ -8,6 +8,5 @@ body {
 }
 
 .container_main {
-  height: 50vh;
-  width: 110vh;
+  padding: 24px;
 }

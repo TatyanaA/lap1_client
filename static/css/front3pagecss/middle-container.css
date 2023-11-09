@@ -1,16 +1,13 @@
 .container_main {
   position: absolute;
-  top: 25%;
-  left: 25%;
+  top: 35%;
+  left: 17.5%;
   background-color: rgba(0, 0, 0, 0.6);
-
   display: flex;
   flex-direction: column;
   align-items: center;
   align-content: space-between;
-  /* flex-basis:auto; */
   justify-content: center;
   align-items: center;
   gap: 60px;
-  z-index: 1;
 }
