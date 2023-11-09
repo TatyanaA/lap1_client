@@ -1,5 +1,6 @@
+@import url('./front3pagecss/font.css');
 body {
-  background-image: url('./home_background.jpg');
+  background-image: url('./background-images/home_background.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -28,17 +29,6 @@ body {
   z-index: 1;
 }
 
-p,
-h1 {
-  color: white;
-}
-h1 {
-  font-size: 100px;
-}
-
-p {
-  font-size: 36px;
-}
 
 .twoButtons {
   display: flex;
