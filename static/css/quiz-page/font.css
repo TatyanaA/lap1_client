@@ -31,6 +31,8 @@ h1 {
 }
 
 #question1 {
+  text-align: center;
+  padding: 12px;
   font-size: 40px;
 }
 
