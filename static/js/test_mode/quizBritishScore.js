@@ -36,7 +36,8 @@ function displayQuestion() {
         answer2.textContent = data.answer_2;
         answer3.textContent = data.answer_3;
         correctAnswer.textContent = data.correct_answer;
-
+        
+        // allows for no question to be repeated
         prevIds.push(currentId);
         localStorage.setItem('prevIds', JSON.stringify(prevIds));
         console.log(prevIds);
