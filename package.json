@@ -12,7 +12,10 @@
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^8.2.2",
-    "live-server": "^1.2.2",
+    "live-server": "^1.1.0",
     "watchify": "^4.0.0"
+  },
+  "dependencies": {
+    "sweetalert2": "^11.6.13"
   }
 }
