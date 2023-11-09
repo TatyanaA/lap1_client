@@ -39,8 +39,9 @@ This repository contains files that comprise the front end of our web applicatio
 
 ## Future Features
 - Add more specific categories such as the English Civil War.
-- Optimise for mobile devices
-- Provide explanations of answers such as facts
-- Keep content fresh by updating questions
+- Optimise for mobile devices.
+- Provide explanations of answers such as facts.
+- Keep content fresh by updating questions.
+- Could add a confirm answer button and function so that less mistakes are made if an incorrect answer is accidently chosen.
 
 
