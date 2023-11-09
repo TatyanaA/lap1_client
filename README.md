@@ -21,6 +21,14 @@ This repository contains files that comprise the front end of our web applicatio
 - Bootstrap
 - JavaScript
 
+## Process
+- Started by creating an API via express.js.
+- On the front end, html pages were created before the js, this made writing the js easier and gave a skeleton to start on, from which css and js could be implemented.
+- The js for the practice rounds was created first, so that we could then build on this code for the test round.
+- The CSS was developed from a design planned out on Figma. 
+- The app was continously tested to make sure it worked as it should.
+- Bugs were spotted and fixed.
+
 ## Wins and Challenges
 ### Wins 
 - Managed to get the answers displayed on the quiz pages to shuffle 
