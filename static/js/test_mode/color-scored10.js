@@ -34,7 +34,7 @@ function changeCorrect() {
   score++;
 
   //display message on screen
-  const message = `Correct! You now have on ${score} points`;
+  const message = `Correct! You now have ${score} points`;
   mess.textContent = message;
 
   // disable buttons when an answer is selected
