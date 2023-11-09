@@ -1,0 +1,10 @@
+#nextPage,
+#backHome {
+  font-size: 30px;
+  width: 200px;
+  height: 50px;
+  border-radius: 0.5em;
+  border: none;
+  margin-left: 20px;
+  margin-right: 20px;
+}

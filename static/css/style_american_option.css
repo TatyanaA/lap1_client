@@ -1,27 +1,14 @@
 @import url('./front3pagecss/font.css');  /* import fonts */
 @import url('./front3pagecss/middle-container.css');
+@import url('./front3pagecss/body.css');
+@import url('./front3pagecss/buttons.css');
 
 body {
   background-image: url('./background-images/america_img.jpg');
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center center;
-  font-family: 'Jim Nightshade', cursive;
 }
 
-
-
-.start {
-  font-size: 30px;
-  width: 300px;
-  height: 70px;
-  border-radius: 0.5em;
-  border: none;
+.container_main {
+  height: 50vh;
+  width: 110vh;
 }
 
-.select {
-  color: black;
-  background-color: transparent;
-  text-decoration: none;
-}
