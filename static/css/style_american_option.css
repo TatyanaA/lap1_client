@@ -1,5 +1,8 @@
+@import url('./front3pagecss/font.css');  /* import fonts */
+@import url('./front3pagecss/middle-container.css');
+
 body {
-  background-image: url('./america_img.jpg');
+  background-image: url('./background-images/america_img.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -7,42 +10,7 @@ body {
   font-family: 'Jim Nightshade', cursive;
 }
 
-.container_main {
-  position: absolute;
-  top: 25%;
-  left: 25%;
-  background-color: rgba(0, 0, 0, 0.6);
-  height: 50vh;
-  width: 110vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: space-between;
-  /* flex-basis:auto; */
-  justify-content: center;
-  align-items: center;
-  gap: 60px;
-  z-index: 1;
-}
 
-p,
-h1 {
-  color: white;
-}
-h1 {
-  font-size: 100px;
-}
-
-p {
-  font-size: 36px;
-}
-
-.twoButtons {
-  display: flex;
-  flex-direction: row;
-  gap: 70px;
-  /* height:200px; */
-}
 
 .start {
   font-size: 30px;
@@ -50,12 +18,6 @@ p {
   height: 70px;
   border-radius: 0.5em;
   border: none;
-}
-.velocity {
-  font-size: 40px;
-}
-.menuMain {
-  font-size: 25px;
 }
 
 .select {
