@@ -1,6 +1,7 @@
 @import url('./quiz-page/font.css');
 @import url('./quiz-page/container.css');
 @import url('./quiz-page/buttons.css');
+@import url('https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap');
 
 body {
   background-color: #8391a6;
