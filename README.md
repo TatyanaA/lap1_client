@@ -1,8 +1,8 @@
 # History Quiz App (client side)
 
-## Weblinks
-- Front end website: https://reddy-client-12-joel-7mq3.onrender.com/
-- Back end: https://reddy-server-12-joel-nybo.onrender.com/
+## App
+https://reddy-client-12-joel-7mq3.onrender.com/
+
 
 ## About
 This repository contains files that comprise the front end of our web application. The application is a quiz website where users are tested on history questions. The two categories are british history and american history. All questions are multiple choice with 4 options to choose from. Please visit https://github.com/jgooday48/Lap1Project_Server for the server side of this application.
@@ -21,6 +21,14 @@ This repository contains files that comprise the front end of our web applicatio
 - Bootstrap
 - JavaScript
 
+## Process
+- Started by creating an API via express.js.
+- On the front end, html pages were created before the js, this made writing the js easier and gave a skeleton to start on, from which css and js could be implemented.
+- The js for the practice rounds was created first, so that we could then build on this code for the test round.
+- The CSS was developed from a design planned out on Figma. 
+- The app was continously tested to make sure it worked as it should.
+- Bugs were spotted and fixed.
+
 ## Wins and Challenges
 ### Wins 
 - Managed to get the answers displayed on the quiz pages to shuffle 
@@ -32,6 +40,7 @@ This repository contains files that comprise the front end of our web applicatio
 
 ## Bugs
 - It can sometimes take a few seconds for the questions and answers to load when first visiting the website.
+
 
 ## Future Features
 - Add more specific categories such as the English Civil War.
