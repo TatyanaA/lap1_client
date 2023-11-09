@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: row;
     gap: 70px;
-    /* height:200px; */
   }
 
 .start {
@@ -13,13 +12,13 @@
     border: none;
   }
   
-  .select {
+.select {
     color: black;
     background-color: transparent;
     text-decoration: none;
   }
 
-  .historyQ {
+.historyQ {
     color: black;
     background-color: transparent;
     text-decoration: none;
