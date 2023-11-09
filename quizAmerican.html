@@ -14,6 +14,10 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./static/css/style_quiz.css" />
     <script defer src="./static/js/practice_mode/quizAmerican.js"></script>
     <script defer src="./static/js/practice_mode/color.js"></script>
@@ -66,9 +70,13 @@
     </nav>
 
     <div class="container_main">
-      <h1>American History Questions</h1>
+      <h1 class="animate__animated animate__fadeInUp animate__faster">
+        American History Questions
+      </h1>
 
-      <div class="container_question">
+      <div
+        class="container_question animate__animated animate__fadeInUp animate__faster"
+      >
         <!-- <h2 id="question">Q1. Who out of the following was not one of Henry VIIIs wives?</h2> -->
 
         <div id="question1"></div>
@@ -92,7 +100,7 @@
 
       <div id="mess"></div>
 
-      <div>
+      <div class="animate__animated animate__fadeInUp animate__faster">
         <button id="nextPage" class="btn btn-light">Next Question</button>
         <button id="backHome" class="btn btn-light">
           <a class="historyQ" href="./index.html">Back to home</a>
