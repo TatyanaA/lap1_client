@@ -49,7 +49,7 @@ function shuffleAnswers() {
   answerArray.push(correctAnswerButton); // add correct answer to array
   shuffleArray(answerArray);
 
-  answerArray.forEach((answer, index) => {
+  answerArray.forEach((answer) => {
     buttonContainer.appendChild(answer); // re-order the answers on the webpage
   });
 }

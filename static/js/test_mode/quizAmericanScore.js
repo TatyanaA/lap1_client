@@ -28,6 +28,8 @@ function displayQuestion() {
       if (prevIds.includes(currentId)) {
         displayQuestion();
       } else {
+        questionNumber++; 
+
         questionElement.textContent = `Q.${questionNumber} ${data.question}`; // output question
 
         //output all 4 choices
@@ -51,7 +53,7 @@ function displayQuestion() {
   incorrectAnswer2.disabled = false;
   incorrectAnswer3.disabled = false;
 
-  questionNumber++; //increment the question number by 1
+
 }
 
 
@@ -65,7 +67,7 @@ function shuffleAnswers() {
   answerArray.push(correctAnswerButton); // add correct answer to array
   shuffleArray(answerArray);
 
-  answerArray.forEach((answer, index) => {
+  answerArray.forEach((answer) => {
     buttonContainer.appendChild(answer); // re-order the answers on the webpage
   });
 }
