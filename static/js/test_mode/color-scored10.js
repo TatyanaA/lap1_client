@@ -15,7 +15,7 @@ function changeBack() {
   // allows background colour to change to red and disables other buttons if user selects an incorrect answer
 
   document.body.style.backgroundColor = 'red';
-  
+
   //display message on screen
   const message = `Incorrect! You score 0 points. You currently have ${score} points`;
   mess.textContent = message;
@@ -28,20 +28,20 @@ function changeBack() {
 }
 
 function changeCorrect() {
-    // changes background colour to green if user selects the correct answer
+  // changes background colour to green if user selects the correct answer
 
-    document.body.style.backgroundColor = 'green';
-    score++;
+  document.body.style.backgroundColor = 'green';
+  score++;
 
-    //display message on screen
-    const message = `Correct! You are on ${score} points`;
-    mess.textContent = message;
+  //display message on screen
+  const message = `Correct! You are on ${score} points`;
+  mess.textContent = message;
 
-    // disable buttons when an answer is selected
-    correctAnswer.disabled = true;
-    incorrectAnswer1.disabled = true;
-    incorrectAnswer2.disabled = true;
-    incorrectAnswer3.disabled = true;
+  // disable buttons when an answer is selected
+  correctAnswer.disabled = true;
+  incorrectAnswer1.disabled = true;
+  incorrectAnswer2.disabled = true;
+  incorrectAnswer3.disabled = true;
 }
 
 let clickCount = 0;
@@ -52,8 +52,25 @@ next.addEventListener('click', endGame);
 function endGame() {
   clickCount++;
   if (clickCount === 10) {
-
-    alert(`Game Over. You scored ${score} points! Click OK to be taken back to the home page.`)
-    window.location.href = './index.html' // goes back to home page
+    Swal.fire({
+      icon: 'success',
+      title: `Congrats on completing the quiz! You scored ${score} points!`,
+      showClass: {
+        popup: `
+          animate__animated
+          animate__fadeInUp
+          animate__faster
+        `
+      },
+      hideClass: {
+        popup: `
+          animate__animated
+          animate__fadeOutDown
+          animate__faster
+        `
+      }
+    }).then(() => {
+      window.location.href = './index.html'; //goes back to home page
+    });
   }
 }
