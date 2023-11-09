@@ -8,7 +8,6 @@ nextPage.addEventListener('click', displayQuestion); // random question displaye
 let questionNumber = 0;
 function displayQuestion() {
   // function to display a question and answer choices
-  console.log('displayFunction() called!');
 
   // grab elements
   const questionElement = document.querySelector('#question1');
@@ -38,14 +37,15 @@ function displayQuestion() {
         answer3.textContent = data.answer_3;
         correctAnswer.textContent = data.correct_answer;
 
+        // allows for no question to be repeated
         prevIds.push(currentId);
         localStorage.setItem('prevIds', JSON.stringify(prevIds));
         console.log(prevIds);
       }
     });
 
-  document.body.style.backgroundColor = '#8391A6';
-  mess.textContent = '';
+  document.body.style.backgroundColor = '#8391A6'; // revert to original background colour
+  mess.textContent = ''; // remove message
 
   // undisable buttons
   correctAnswer.disabled = false;
@@ -57,6 +57,7 @@ function displayQuestion() {
 const correctAnswerButton = document.querySelector('#correct-answer');
 nextPage.addEventListener('click', shuffleAnswers);
 const buttonContainer = document.querySelector('#buttons');
+
 function shuffleAnswers() {
   // function to randomly shuffle the answers
 
