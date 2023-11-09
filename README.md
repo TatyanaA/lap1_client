@@ -29,6 +29,9 @@ This repository contains files that comprise the front end of our web applicatio
 - The app was continously tested to make sure it worked as it should.
 - Bugs were spotted and fixed.
 
+## Bugs
+- If loaded locally, the questions and answers may not appear. To force them to appear, complete a 5 questions test then load a new test or practice mode and this should force them to appear.
+
 ## Wins and Challenges
 ### Wins 
 - Managed to get the answers displayed on the quiz pages to shuffle 
