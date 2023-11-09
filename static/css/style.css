@@ -11,9 +11,7 @@ body {
   flex-basis: auto;
   height: 500px;
   width: 800px;
-
 }
-
 
 @media (max-width: 720px) {
   .container_main {
