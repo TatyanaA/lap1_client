@@ -12,7 +12,7 @@ This repository contains files that comprise the front end of our web applicatio
 2. Now with the server running, open a new terminal and fork and clone this repository
 3. In the terminal run ```npm run```
 4. Open index.html
-5. Select the ```Open with default browser``` option 
+5. Right click and select the ```Open with default browser``` option 
 6. Enjoy our app!
 
 ## Technologies
@@ -33,6 +33,7 @@ This repository contains files that comprise the front end of our web applicatio
 - Connecting to the server is not instantaneous. When a quiz is loaded it may take 30s for the server and client side to connect. This is due to the server being slow to start up.
 
 ## Wins and Challenges
+
 ### Wins 
 - Managed to get the answers displayed on the quiz pages to shuffle 
 - Managed to get the questions to not repeat in the test rounds
