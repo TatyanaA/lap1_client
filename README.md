@@ -30,7 +30,7 @@ This repository contains files that comprise the front end of our web applicatio
 - Bugs were spotted and fixed.
 
 ## Bugs
-- If loaded locally, the questions and answers may not appear. To force them to appear, complete a 5 questions test then load a new test or practice mode and this should force them to appear.
+- Connecting to the server is not instantaneous. When a quiz is loaded it may take 30s for the server and client side to connect. This is due to the server being slow to start up.
 
 ## Wins and Challenges
 ### Wins 
